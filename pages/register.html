@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../style/register.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Register</title>
+  <link rel="shortcut icon" href="../assets/icons/register-icon-title.png" type="image/x-icon">
+
+
+
+</head>
+
+<body>
+
+  <div class="title_page">
+    <h1 class="text_about_page">Registration Form </h1>
+    <!-- <h1 class=" title">WanderWise</h1> -->
+    <h1 class="title"> <a href="../pages/index.html">WanderWise</a></h1>
+
+
+
+
+  </div>
+  <div class="container">
+    <h1 class="heading_tag">Unlock Exclusive Deals — Register Now and Save Big!</h1>
+    <hr>
+
+    <form>
+      <h3>Get Onboard</h3><br>
+
+      <div class="form-group">
+        <label class="labels">Enter Full Name:</label>
+        <input class="form_name" type="text" id="name" placeholder="Full Name">
+        <span id='errors' class="name_error"></span>
+      </div>
+
+      <div class="form-group">
+        <label class="labels">Enter Email:</label>
+        <input class="form_email" type="email" id="email" placeholder="email@gmail.com">
+        <span id='errors' class="email_error"></span>
+
+      </div>
+
+      <div class="form-group">
+        <label class="labels">Contact Number:</label>
+        <input class="form_number1" type="number" id="contactNumber" placeholder="7867****" minlength="10"
+          maxlength="10">
+        <span id='errors' class="number_error"></span>
+      </div>
+
+      <div class="form-group">
+        <label class="labels">Alternative Number:</label>
+        <input class="form_altnumber" type="number" id="altNumber" placeholder="9888****" minlength="10" maxlength="10">
+        <span id='errors' class="altnumber_error"></span>
+      </div>
+
+      <div class="form-group">
+        <label class="labels">Address:</label>
+        <textarea class="form_address" id="address" placeholder=""></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="labels">Age:</label>
+        <input class="form_age" type="number" id="age" placeholder="">
+      </div>
+
+      <div class="form-group">
+        <label class="labels">Password:</label>
+        <input class="form_age" type="password" id="password" placeholder="">
+        <span id='errors' class="password_error"></span>
+      </div>
+
+      <div class="form-group">
+        <label class="labels">Confirm Password:</label>
+        <input class="form_age" type="password" id="cnfPassword" placeholder="">
+        <span id='errors' class="cnfPassword_error"></span>
+      </div>
+
+      <button type="submit" class="submit">Submit</button>
+
+      <h4>If already a user Login</h4>
+      <button type="login" class="login">Login</button>
+    </form>
+  </div>
+
+  <footer>
+    <hr>
+
+    <div class="footer">
+
+      <div class="footer_link">
+        <div class="foot_element">
+          <p>
+            <a class="home_button" href="../pages/index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <!-- <i class="fa-solid fa-house"></i>  -->
+          </p>
+        </div>
+
+        <div class="foot_element">
+          <h3 class="column">Information</h3>
+          <p>About us</p>
+          <p>More Search</p>
+
+        </div>
+        <div class="foot_element">
+          <h3 class="column"> Helpful Link </h3>
+          <p>Support</p>
+          <p>Privacy Policy</p>
+          <p>Term and Condition</p>
+
+        </div>
+        <div class="foot_element">
+          <h3 class="column">Contact Us</h3>
+          <p>Phone-9898754733</p>
+          <p>Emai-xyz049@gmail.coml</p>
+          <p class="icons_"><i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-facebook"></i> <i
+              class="fa-brands fa-instagram"></i> <i class="fa-brands fa-x-twitter"></i></p>
+
+        </div>
+      </div>
+
+
+      <div class="footer_text">
+
+        <span>All material herein © 2005–2025 WanderWise Ltd. All Rights Reserved.
+          WanderWise is part of Booking Holdings Inc., the world leader in online travel & related
+          services.</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../scripts/form.js"></script>
+</body>
+
+</html>

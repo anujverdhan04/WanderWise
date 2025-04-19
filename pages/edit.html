@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../scripts/admin.js" defer></script>
+    <link rel="stylesheet" href="../style/admin.css">
+    <link rel="stylesheet" href="../style/edit.css">
+
+
+
+    <title>Edit Page</title>
+    <link rel="shortcut icon" href="../assets/icons/register-icon-title.png"  type="image/x-icon">
+
+
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="headerDiv">
+            <i id ="icons" class="fa-duotone fa-solid fa-id-card fa-flip"></i>
+            <h2 class="header">Administrator Interface </h2>
+        </div>
+      
+    </header>
+
+    <div class=" mainDiv">
+
+        <div class="containingSiveNav">
+            <div class="sideNav">
+            </div>
+        </div>
+
+
+</div>  
+<div class="editSpace">
+    <h2>Edit User Information</h2>
+
+    <div class="form-group">
+        <label class="labels">Update Full Name:</label>
+        <input class="form_name" type="text" id="name">
+    </div>
+
+    <div class="form-group">
+        <label class="labels">Change Email:</label>
+        <input class="form_email" type="email" id="email">
+    </div>
+
+    <div class="form-group">
+        <label class="labels">Change Contact Number:</label>
+        <input class="form_number1" type="number" id="contactNumber" minlength="10" maxlength="10">
+    </div>
+
+    <div class="form-group">
+        <label class="labels">Change Alternative Number:</label>
+        <input class="form_altnumber" type="number" id="altNumber" minlength="10" maxlength="10">
+    </div>
+
+    <div class="form-group">
+        <label class="labels">Update Address:</label>
+        <textarea class="form_address" id="address" placeholder=""></textarea>
+    </div>
+
+    <div class="form-group">
+        <label class="labels">Change Password:</label>
+        <input class="form_password" type="text" id="password" placeholder="">
+        <span id='errors' class="password_error"></span>
+    </div>
+
+
+    <button type="submit" class="update">Update</button>
+    <button type="button" class="cancel">Cancel</button>
+</div>
+
+<script src="../scripts/edit.js" ></script>
+</body>
+</html>

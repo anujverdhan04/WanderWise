@@ -1,0 +1,492 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    color: var(--main-text-color);
+    font-family: var(--font-used);
+    /* background: rgb(47, 47, 47); */
+    /* background: var(--main-bg); */
+    text-decoration: none;
+    /* width: 100%; */
+}
+
+:root {
+    --font-used: 'Times New Roman', Times, serif;
+    --main-text-color: rgb(6, 5, 5);
+    --main-bg: linear-gradient(55deg, rgba(47, 47, 47, 1) 0%, rgba(214, 214, 214, 1) 12%, rgba(227, 227, 227, 1) 46%, rgba(242, 242, 242, 1) 74%, rgba(245, 245, 245, 1) 83%);
+}
+
+body {
+    background: var(--main-bg);
+    /* width: 100%; */
+}
+
+header {
+    /* background: rgb(14, 52, 117); */
+    /* background-color: var(--main-bg) */
+    /* background: linear-gradient(50deg, rgba(19, 50, 117, 1) 2%, rgba(70, 120, 196, 1) 30%); */
+    /* background: linear-gradient(20deg, rgb(18, 39, 84) 5%, rgb(127, 197, 237) 39%); */
+    background-color: #d2d1d1;
+    width: 100%;
+
+}
+
+
+.top {
+    font-style: italic;
+    text-align: center;
+    max-width: 100%;
+
+
+}
+
+.title {
+    padding: 2px;
+}
+
+
+.nav {
+
+    /* Ihave to work on background  */
+    background: transparent;
+    /* display: flex; */
+    padding-top: 10px;
+    border-radius: 8px;
+    text-align: left;
+    /* background-color: rgb(226, 226, 226); */
+
+}
+
+.nav2 {
+    display: flex;
+    background: transparent;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+.hotels,
+.restaurant,
+.flights,
+.things,
+.register {
+
+    display: inline-flex;
+    margin: 10px;
+
+}
+.loginSpace{
+
+    width: 10%;
+    height: 40px;
+    position: absolute;
+    top: 1px;
+    right: .4%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.loginSpace a{
+    font-size:15px ;
+    color: rgb(34, 65, 93);
+}
+
+/* hover prop for button background */
+
+.nav2 h3:hover {
+    background-color: rgb(135, 135, 135);
+    font-size: 18px;
+}
+
+/* Header section ends here */
+
+/* About page content  */
+
+.restaurants {
+    display: block;
+
+}
+
+.about_restaurant {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.trying_image {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.search_about {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text_ {
+    color: #ffffff;
+    font-family: var(--font-used);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.input_about_flights {
+
+    display: flex;
+    border: 2px solid rgb(90, 87, 87);
+    border-radius: 50px;
+    background: #ffffff;
+    justify-content: space-between;
+    padding: 2% 2%;
+    overflow: hidden;
+}
+
+.input_activity {
+    border: none;
+    outline: none;
+    /* width: 30%; */
+
+}
+
+.input_about_flights {
+    width: 100%;
+    padding-left: 5px;
+}
+
+
+
+
+.flight_button {
+
+    padding: 14px 30px 14px 20px;
+    box-sizing: border-box;
+    border: 2px solid #004f32;
+    border-radius: inherit;
+    background-color: #004f32;
+    font-weight: bold;
+    font-size: 18px;
+    /* line-height: 20px; */
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button_about_traveltype {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+
+}
+
+.about_travel {
+    background: none;
+    color: #ffffff;
+    border: none;
+    font-size: 1.0rem;
+    font: bold;
+    margin: 2% 0;
+    cursor: pointer;
+}
+
+
+.early_access {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+.first_choice {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    margin: 2% 0%;
+    padding: 2%;
+    background-color: rgb(212, 212, 212)
+}
+
+.smaller_text {
+    text-align: center;
+    font: bold;
+    font-size: 20px;
+    margin-bottom: 2%;
+    color: rgb(43, 97, 79);
+}
+
+.little_smaller_text {
+    text-align: center;
+    display: flex;
+    padding: 0% 5%;
+
+}
+
+.currently_famous,
+.currently_summer,
+.currently_sports {
+    margin-top: 3%;
+    color: rgb(3, 6, 5);
+}
+
+.top_destination_currently,
+.summer_destination_currently,
+.sports_destination_currently {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1% 0%;
+    padding: 3% 0%;
+
+}
+
+.about_location {
+    padding: 3% 0;
+}
+
+.image_containing_location {
+    border-radius: 10px;
+    border: 5px solid rgb(79, 77, 77);
+}
+
+.text_about_location {
+    font-family: var(--font-used);
+    font-size: 1.25rem;
+    font-weight: bold;
+    /* margin:2%; */
+    margin-left: 3%;
+}
+
+.prices {
+    font-family: var(--font-used);
+    font-size: 1rem;
+    font-weight: bold;
+    /* margin:2%; */
+    margin-left: 3%;
+}
+
+
+/*footer css  */
+
+
+.footer {
+    padding: 4%;
+    margin-top: 5px;
+
+
+}
+
+.footer_text {
+    text-align: center;
+    padding: 2%;
+    justify-content: space-around
+}
+
+.footer_link {
+    display: flex;
+    justify-content: end;
+    gap: 3%;
+}
+
+.column {
+    font-weight: bold;
+
+}
+
+.foot_element {
+    padding: 1%;
+}
+
+.icons_ {
+    display: flex;
+    gap: 10px;
+    padding: 2%;
+    margin-top: 1%;
+}
+
+.home_button {
+    font-weight: bold;
+}
+
+
+
+
+
+@media (min-width:1024px) and (max-width:1300px) {
+
+    .trying_image {
+        max-width: 100%;
+
+    }
+
+    .flight_img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .search_about {
+        /* position:fixed; */
+        max-width: 100%;
+        top: 30%;
+        left: 13%;
+
+    }
+
+    .early_access {
+        max-width: 100%;
+        font-size: 14px;
+        gap: 2%;
+    }
+
+
+
+}
+
+
+@media (min-width:700px) and (max-width:1023px) {
+
+    .nav2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .lower_section {
+        font-size: 1rem;
+    }
+
+    .trying_image {
+        max-width: 100%;
+
+    }
+
+    .flight_img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .search_about {
+
+        max-width: 100%;
+        top: 25%;
+        left:2%;
+        right: 5%;
+
+    }
+
+    .text_ {
+        font-size: 1.25rem;
+    }
+    .input_about_flights{
+        max-width: 100%;
+        padding-right: 20px;
+    }
+   
+     .flight_button{
+        right: 20%;
+        overflow: visible;
+     }
+
+    .early_access {
+        max-width: 100%;
+        font-size: 14px;
+        gap: 2%;
+    }
+   
+
+}
+
+@media (max-width:700px) {
+
+    .nav2 {
+        font-size: 10px;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        text-align: center;
+
+    }
+
+    .trying_image {
+        max-width: 100%;
+        height:auto;
+
+    }
+
+    .flight_img {
+        max-width: 100%;
+        height: 200px;
+    }
+
+    .search_about {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 17%;
+        left: 2%;
+        right: 2%;
+        padding: 2% 0;
+    }
+
+    .input_about_flights {
+
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 2%;
+        padding: 5% 2%;
+
+    }
+    .input_activity{
+        max-width: 100%;
+        /* background-color: #bdeedc; */
+    }
+
+    .flight_button{
+        font-size:small ;
+        text-align: center;
+        /* height: 1px; */
+    }
+
+    .text_ {
+        font-size: 1rem;
+    }
+
+    .early_access {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        gap: 2%;
+    }
+
+    .first_choice {
+        text-align: center;
+    }
+
+    .little_smaller_text {
+        text-align: center;
+    }
+
+
+    .footer {
+        max-width: 100%;
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+}

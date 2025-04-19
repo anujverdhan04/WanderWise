@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,0,0&icon_names=pin_drop" />
+    <link rel="stylesheet" href="../style/hotels-style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="../assets/icons/hotel-icon-title.png" type="image/x-icon">
+
+    <title>Hotels</title>
+</head>
+
+<body>
+    <header class="top">
+        <!-- <h2><a href ="../pages/testing.html"> Testing</a></h2> -->
+        <h1 class="title">
+            <!-- <a href="../pages/index.html">WanderWise</a> -->
+        </h1>
+
+
+        <div class="nav">
+
+            <div class="nav2">
+                <h3 class="hotels"></h3>
+                <h3 class="restaurants"></h3>
+                <h3 class="things"></h3>
+                <h3 class="flights"></h3>
+                <h3 class="register"></h3>
+                <h3 class="loginSpace"></h3>
+
+            </div>
+        </div>
+
+    </header>
+
+    <div class="second_page">
+
+        <div class="images">
+
+            <img class="hotel" src="../assets/images/hotel_main.jpg" alt="image">
+            <h2 class="aboutphoto">Hotels Near Your Destination</h2>
+            <div class="text_above">
+                <form class="hotelForm">
+
+                    <div class="inputAboutDest">
+                        <lable class="labledata">Destination:</lable>
+                        <input id="destination" class="inputtype" type="text"
+                            placeholder="Hotel || Destination"><br><br>
+                    </div>
+
+
+                    <div class="dates">
+                        <div class="fromdate">
+                            <label class="labledata">From:</label>
+                            <input id="inDate" class="inputtype" type="date"><br><br>
+                            <span class="inDateError"></span>
+                        </div>
+
+                        <div class="todate">
+                            <lable class="labledata">To:</lable>
+                            <input id="outDate" class="inputtype" type="date"><br><br>
+                            <span class="outDateError"></span>
+                        </div>
+                    </div>
+
+                    <div class="labledataMain">
+
+                        <div class="rooms">
+                            <lable class="labledata">Rooms:</lable>
+                            <input type="number" id="noRoom" class="inputtype" name="rooms_rq">
+                            <span class="noRoomError"></span>
+                        </div>
+
+                        <div class="adults">
+                            <label id='adults' class="labledata">Adults:</label>
+                            <input type="number" id="noAdult" class="inputtype" name="adults_rq" >
+                            <span class="noAdultError"></span>
+                        </div>
+
+
+                    </div>
+
+                    <div class="buttonoption">
+                        <input class="submit" type="submit" value="Find Hotel">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!--  lower section of the page 
+        where hotels are present according to the preference -->
+
+        <!-- top destination starts from here -->
+
+        <div class="lower_section">
+
+            <hr class="hr">
+
+            <div>
+                <h2 class="destination_top">Top Destinations</h2>
+            </div>
+
+            <div class="top_destinations">
+
+
+                <div class="famous1">
+
+                    <img class="image" src="../assets/hotels/hotels(200w).jpg" atl="india">
+
+                    <div class="testing">
+                        <p class="text1">NAME: Travel Destination</p>
+
+                        <p class="discription"><b>Discription:</b>Hotel with best sunset viwe of the particulat location
+                            .</p>
+                        <p>Ratings <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> <i
+                                class="fa-regular fa-star"></i> </p>
+                        <p class="price">Price-9999</p>
+                    </div>
+
+                </div>
+
+
+                <div class="famous1">
+                    <img class="image" src="../assets/hotels/hotel(245w).jpg" atl="Dubai">
+
+                    <div class="testing">
+                        <p class="text1">Innovation </p>
+                        <p class="discription"><b>Discription:</b>Hotel at Innovation center of the world:Dubai.</p>
+                        <p class="rating">Ratings <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> <i
+                                class="fa-regular fa-star"></i> </p>
+                        <p class="price">Price-9999</p>
+
+                    </div>
+                </div>
+
+
+                <div class="famous1">
+                    <img class="image" src="../assets/hotels/hotel(300w).jpg" atl="Maldives">
+
+                    <div class="testing">
+                        <p class="text1">Beaches Destination</p>
+                        <p class="discription"><b>Discription:</b>Biggest personal beach of the island. </p>
+                        <p>Ratings <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> <i
+                                class="fa-regular fa-star"></i> </p>
+                        <p class="price">Price-9999</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- top destination ended here -->
+
+
+            <!-- traveller's favourite starts from here -->
+
+
+            <div>
+
+                <h2 class="favourite_travel">Traveller's Favourites</h2>
+            </div>
+
+            <div class="travel_favourite">
+
+                <div class="famous1">
+
+                    <img class="image" src="../assets/hotels/hotels(200w).jpg" alt="About Spain">
+
+                    <div class="testing">
+                        <p class="text1">Beache Famous</p>
+                        <p class="discription"><b>Discription:</b>Having best view of the sunset with beach diving!
+                        </p>
+                        <p>Ratings <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> <i
+                                class="fa-regular fa-star"></i> </p>
+                        <p class="price">Price-9999</p>
+                    </div>
+                </div>
+
+
+                <div class="famous1">
+
+
+                    <img class="image" src="../assets/hotels/hotel(245w).jpg" alt="About Spain">
+
+
+                    <div class="testing">
+                        <p class="text1">River Famous</p>
+                        <p class="discription"><b>Discription:</b>Having a River Shore at its walking garden?</p>
+                        <p>Ratings <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> <i
+                                class="fa-regular fa-star"></i> </p>
+                        <p class="price">Price-9999</p>
+                    </div>
+                </div>
+
+                <div class="famous1">
+
+                    <img class="image" src="../assets/hotels/hotel(300w).jpg" alt="About Shimla">
+
+                    <div class="testing">
+                        <p class="text1">Snowfall Paradise</p>
+                        <p class="discription"><b>Discription:</b>At peak winters the hotel is fully covered with
+                            massive snow.</p>
+                        <p>Ratings <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> <i
+                                class="fa-regular fa-star"></i> </p>
+                        <p class="price">Price-9999</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- traveller's favourite ended here -->
+
+
+
+            <!-- You may like starts here -->
+
+            <div>
+                <h2 class="liked_by_you">Something you appreciate</h3>
+            </div>
+
+            <div class="you_may_like">
+
+                <div class="famous1">
+                    <img class="image" src="../assets/hotels/hotels(200w).jpg" alt="About Shimla">
+
+                    <div class="testing">
+                        <p class="text1">Sunsire Paradise</p>
+                        <p class="discription"><b>Discription:</b>Best sunrise view of the place with open rooftop.</p>
+                        <p>Ratings <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> <i
+                                class="fa-regular fa-star"></i> </p>
+                        <p class="price">Price-9999</p>
+
+                    </div>
+                </div>
+
+
+                <div class="famous1">
+
+                    <img class="image" src="../assets/hotels/hotel(245w).jpg" alt="About Spain">
+
+                    <div class="testing">
+
+                        <p class="text1">Mountain Famous</p>
+
+                        <p class="discription"><b>Discription:</b>Higgest hotel at motarable roads with mount clliff.
+                        </p>
+                        <p>Ratings <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> <i
+                                class="fa-regular fa-star"></i> </p>
+                        <p class="price">Price-9999</p>
+
+                    </div>
+                </div>
+
+
+                <div class="famous1">
+
+                    <img class="image" src="../assets/hotels/hotel(300w).jpg" alt="About Spain">
+
+                    <div class="testing">
+                        <p class="text1">Sunset Famous</p>
+
+                        <p class="discription"><b>Discription:</b>Best sunset view of the area.</p>
+                        <p>Ratings <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> <i
+                                class="fa-regular fa-star"></i> </p>
+                        <p class="price">Price-9999</p>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- You may like ends here -->
+
+
+
+            <!-- lowest of lower section starts -->
+
+            <div class="downward">
+
+                <!-- Why these stays are famous for  -->
+                <div>
+                    <h2 class="text_about_remarkable"> Remarkable For</h2>
+                </div>
+
+                <div class="alligned_together">
+
+                    <div class="famous1">
+
+                        <img class="remarkable_image" src="../assets/hotels/image_famous2.jpg" atl="Sunset">
+
+                        <div class="testing">
+                            <p class="text1">Trek Famous</p>
+
+                            <p class="discription"><b>Discription:</b>Nearest to the china peak trek with best
+                                accomodation and lake view.</p>
+                            <p>Ratings <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                    class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> <i
+                                    class="fa-regular fa-star"></i> </p>
+                            <p class="price">Price-9999</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="famous1">
+
+
+
+                        <img class="remarkable_image" src="../assets/hotels/image_famous3.jpg" atl="Sunset">
+
+                        <div class="testing">
+                            <p class="text1">Sunrise Famous</p>
+
+                            <p class="discription"><b>Discription:</b>Visiblity of first ray of the sun at every season
+                            </p>
+                            <p>Ratings <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                    class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> <i
+                                    class="fa-regular fa-star"></i> </p>
+                            <p class="price">Price-9999</p>
+                        </div>
+                    </div>
+
+
+                    <div class="famous1">
+
+
+
+                        <img class="remarkable_image" src="../assets/hotels/image_famous1.jpg" atl="Sunset">
+
+                        <div class="testing">
+                            <p class="text1">Games Paradise</p>
+
+                            <p class="discription"><b>Discription:</b>Best indore games facilities at this part of the
+                                location.
+                            </p>
+                            <p>Ratings <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                    class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> <i
+                                    class="fa-regular fa-star"></i> </p>
+                            <p class="price">Price-9999</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Pets Friendly Section -->
+                <div>
+                    <h2 class="text_about_remarkable">Pet's Friendly</h2>
+                </div>
+
+                <div class="alligned_together">
+
+                    <div class="famous1">
+
+                        <img class="remarkable_image" src="../assets/hotels/image_famous2.jpg" atl="Sunset">
+
+
+                        <div class="testing">
+                            <p class="text1">Cotage Famous</p>
+
+                            <p class="discription"><b>Discription:</b>Pest friendly stay with different sections
+                                avaliable for the pets and also allowed to their personal space.
+                            </p>
+                            <p>Ratings <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                    class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> <i
+                                    class="fa-regular fa-star"></i> </p>
+                            <p class="price">Price-9999</p>
+                        </div>
+                    </div>
+
+                    <div class="famous1">
+
+
+
+                        <img class="remarkable_image" src="../assets/hotels/image_famous3.jpg" atl="Sunset">
+
+                        <div class="testing">
+                            <p class="text1">Villa Famous</p>
+
+                            <p class="discription"><b>Discription:</b>Pets stay avaliable.
+                            </p>
+                            <p>Ratings <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                    class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> <i
+                                    class="fa-regular fa-star"></i> </p>
+                            <p class="price">Price-9999</p>
+                        </div>
+                    </div>
+
+                    <div class="famous1">
+
+
+
+                        <img class="remarkable_image" src="../assets/hotels/image_famous1.jpg" atl="Sunset">
+
+
+                        <div class="testing">
+                            <p class="text1"> Mount Ruler</p>
+
+                            <p class="discription"><b>Discription:</b>We also provide different packages for mountain
+                                activities such as gocart , fungle safaries , treking sports.
+                            </p>
+                            <p>Ratings <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                    class="fa-solid fa-star"></i> <i class="fa-regular fa-star-half-stroke"></i> <i
+                                    class="fa-regular fa-star"></i> </p>
+                            <p class="price">Price-9999</p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+
+        <div class="footer">
+
+            <div class="footer_link">
+                <div class="foot_element">
+                    <p>
+                        <a class="home_button" href="../pages/index.html"><i class="fa-solid fa-house"></i>Home</a>
+                        <!-- <i class="fa-solid fa-house"></i> Home -->
+                    </p>
+                </div>
+
+                <div class="foot_element">
+                    <h3 class="column">Information</h3>
+                    <p>About us</p>
+                    <p>More Search</p>
+                    <!-- <p>hello</p> -->
+
+                </div>
+                <div class="foot_element">
+                    <h3 class="column"> Helpful Link </h3>
+                    <p>Support</p>
+                    <p>Privacy Policy</p>
+                    <p>Term and Condition</p>
+
+                </div>
+                <div class="foot_element">
+                    <h3 class="column">Contact Us</h3>
+                    <p>Phone-9898754733</p>
+                    <p>Emai-xyz049@gmail.coml</p>
+                    <p class="icons_"><i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-facebook"></i> <i
+                            class="fa-brands fa-instagram"></i> <i class="fa-brands fa-x-twitter"></i></p>
+
+                </div>
+            </div>
+
+
+            <div class="footer_text">
+
+                <span>All material herein © 2005–2025 WanderWise Ltd. All Rights Reserved.
+                    WanderWise is part of Booking Holdings Inc., the world leader in online travel & related
+                    services.</span>
+            </div>
+
+        </div>
+    </footer>
+
+    </div>
+    <script src="../scripts/hotels.js" defer></script>
+</body>
+
+</html>

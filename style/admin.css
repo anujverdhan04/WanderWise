@@ -1,0 +1,619 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--main-text-color);
+    font-family: var(--font-used);
+    text-decoration: none;
+    box-sizing: border-box;
+
+    }
+
+body {
+    background-color: whitesmoke;
+    
+
+}
+
+.header {
+    background-color: rgb(204, 208, 206);
+    color: rgb(10, 10, 10);
+
+}
+
+.headerDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: end;
+    padding: 10px 5px;
+    font-size: medium;
+}
+
+#icons{
+    max-width: 100%;
+  font-size: 30px;
+  color: rgb(94, 46, 46);
+  
+    
+    
+}
+
+
+
+
+.containingSiveNav{
+    max-width:20% ;
+ 
+
+}
+
+.sideNav {
+    max-width: 100%;
+    margin: 2px 2px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+ 
+
+}
+
+
+
+
+#title {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 5px;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(69, 125, 91);
+    font-size: 14px;
+    border-radius: 5px;
+    
+
+}
+
+.divContainingSideNav {
+    max-width: 100%;
+}
+
+.listContainingInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    font-size: larger;
+    font-weight: bold;
+    list-style-type: none;
+    margin: 10% 2%;
+   
+}
+
+.listContainingInfo a{
+    display: flex;
+    gap: 10px;
+}
+
+.listContainingInfoDiv {
+
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    padding: 5px 0;
+    font-size: 14px;
+    color: rgb(54, 53, 53);
+ 
+}
+
+
+.listContainingInfoDiv:hover {
+    background-color: rgb(148, 148, 148);
+    max-width: 95%;
+    border-radius: 8px;
+}
+
+
+/* icon css */
+
+#displaySymbol{
+    font-size: 25px;
+    color: rgb(63, 63, 64);
+}
+
+.lists{
+      font-size: 20px;
+}
+
+.containingData{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    gap: 50px; 
+    position: absolute;
+    left: 15%;
+   top: 6.6%;
+    border-left: 2px solid rgb(52, 51, 51);
+    
+
+   
+
+}
+.middleSection{
+    display: flex;
+    justify-content: end;
+ 
+}
+
+
+
+
+.adminDiv{
+    width: 16%;
+    display: flex;
+    font-size: large;
+    padding: 1% 1%;
+    margin: 2% 0 0 0;
+    border: 4px;
+    color: rgb(54, 53, 53);
+   justify-content:center;
+   gap: 15px;
+   /* border: 10px solid red; */
+   background-color: rgb(245, 244, 244);
+   border-radius: 10px;
+}
+
+.adminImage{
+    height: 50px;
+    width: 45px;
+}
+
+.textDiv{
+    color: rgb(50, 52, 52);
+}
+.containingInfo{
+   
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    align-items: center;
+    margin-top:-50px ;
+   justify-content: space-around;
+   
+
+}
+
+.aboutUserInfo{
+
+    width: 100%;
+    display:flex;
+    padding: 10px;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.totalUser,
+.totalBooking
+{   
+     
+    /* background-color: rgb(107, 165, 195); */
+  
+    background-color: #d8d8d6;
+    width: 40%;
+    padding: 10px 0;
+    margin: 2% 0;
+    align-items: center;
+    border-radius: 5px;
+
+
+}
+
+#numberOfUsersText,#numberOfBookingsText{
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.noOfUsers ,.noOfBookings{
+
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 0;
+    font-size: larger;
+
+}
+
+ .aboutUserInfo :hover{
+    background-color: rgb(103, 122, 122);
+}
+
+
+table{
+    width:100%;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+
+
+th{
+    max-width: 100%;
+    border: 2px solid;
+    background-color: rgb(254, 88, 113);
+    color: rgb(218, 217, 217);
+    padding: 5px;
+    position: sticky;
+    top: 3%;
+    z-index: 5;
+
+}
+
+td{
+    max-width: 100%;
+    border: 1px solid;
+    padding: 4px ;
+    color: rgb(45, 44, 44);
+    background-color: rgb(207, 218, 247);
+
+
+
+}
+
+
+.editUser ,.editAdmin , .editHotel , .editRestro{
+    width: 100%;
+    background-color: rgb(55, 17, 248);
+    color:rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-bottom: 10%;
+}
+.deleteUser , .deleteAdmin , .deleteHotel , .deleteRestro{
+    width: 100% ;
+    background-color: rgb(247, 13, 13);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 10%;
+}
+
+
+.hotelInfo{
+    width: 90%;
+    position: relative;
+    left: 5%;
+    border-radius: 10px ;
+    background-color: #d8d8d8;
+    margin:  2% 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow:hidden;
+    overflow-y: auto;
+    height: min-content; 
+    box-shadow: 20px 10px  10px rgb(219, 234, 245);
+   
+
+}
+
+
+
+.aboutuser , .aboutAdmin{
+    width: 90%;
+    position: relative;
+    left: 5%;
+    border-radius: 10px ;
+    background-color: #d8d8d8;
+    margin:  2% 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow:hidden;
+    overflow-y: auto;
+    height: 300px; 
+    box-shadow: 20px 10px  10px rgb(219, 234, 245);
+   
+
+}
+
+
+.addHotel{
+     width: 90%;
+     position: relative;
+     left: 5%;
+     border-radius: 10px;
+     background-color: #d8d8d8;
+     margin: 2% 0 ;
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     overflow:hidden;
+     overflow-y: auto;
+     height: 400px;
+    box-shadow: 20px 10px  10px rgb(219, 234, 245);
+   
+
+
+}
+
+.addRestro ,.flight{
+    width: 90%;
+    position: relative;
+    left: 5%;
+    border-radius: 10px;
+    background-color: #d8d8d8;
+    margin: 2% 0 ;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow:hidden;
+    overflow-y: auto;
+    height: 250px; 
+   
+    box-shadow: 20px 10px  10px rgb(219, 234, 245);
+   
+}
+
+#hotelListed{
+    margin: 1% 0;
+}
+
+.buttonAboutUser,
+.buttonAboutAdmin,
+.buttonAboutHotel,
+.buttonAboutRestro,
+.editbutton
+
+
+{
+    display:flex ;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    padding: 4px;
+    margin: 2px 0;
+    background-color: rgb(192, 56, 56);
+    font-size: 15px;
+
+
+}
+
+.buttonAboutHotelAdd,
+.buttonAboutRestroAdd
+{
+    display:flex ;
+    position: absolute;
+    top: 1%;
+    right: 10%;
+    padding: 4px;
+    margin: 2px 0;
+    background-color: rgb(63, 50, 240);
+    font-size: 15px;
+    
+
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+
+  
+    .containingData {
+     
+        top: 7.5%;
+        width: 80%;
+        left: 20%;
+    }
+    .lists{
+        
+        font-size: 18px;
+        
+    }
+    .adminDiv{
+      display: flex;
+      position: relative;
+      right:  5%;
+    
+    
+    }
+
+    .sideNav {
+        max-width: 25%;
+        position: fixed;
+        height: 100vh;
+    }
+
+    .middleSection {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .aboutUserInfo {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 20px;
+        align-items: center;
+        
+        
+    }
+
+    .totalUser, .totalBooking {
+        width: 80%;
+        text-align: center;
+    }
+    
+    table {
+       
+        overflow-x: auto;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .containingData {
+        width: 100%;
+        left: 0;
+        border-left: none;
+    }
+
+    .sideNav {
+        max-width: 200px;
+        position: absolute;
+        left: -200px;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .sideNav.active {
+        left: 0;
+    }
+
+    .listContainingInfo {
+        gap: 15px;
+        font-size: medium;
+    }
+
+    .listContainingInfoDiv {
+        font-size: small;
+        padding: 5px;
+    }
+
+    .middleSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutUserInfo {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .totalUser, .totalBooking {
+        width: 70%;
+    }
+
+    .hotelInfo{
+        width: 65%;
+        padding-top:10px ;
+        left: 15%;
+        
+    }
+    .infoAboutUser .heading{
+        width: 100%;
+        background-color: aquamarine;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+     
+    }
+}
+
+@media (max-width: 480px) {
+    .sideNav {
+        max-width: 160px;
+    }
+
+    .containingData {
+        padding: 10px;
+    }
+
+    .listContainingInfo {
+        font-size: small;
+    }
+
+    .listContainingInfoDiv {
+        gap: 3%;
+        font-size: 12px;
+    }
+
+    .middleSection {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .aboutUserInfo {
+        flex-direction: column;
+    }
+
+    .totalUser, .totalBooking {
+        width: 95%;
+    }
+
+    .hotelInfo, .aboutuser, .addHotel {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .hotelInfo{
+      
+        padding-top:10px ;
+        left: 5%;
+        
+    }
+
+    .buttonAboutUser, .buttonAboutHotel, .editbutton {
+        font-size: 12px;
+        padding: 3px;
+    }
+}
+
+@media (max-width: 340px) {
+    .sideNav {
+        max-width: 130px;
+    }
+
+    #title {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .listContainingInfo {
+        font-size: 10px;
+        gap: 10px;
+    }
+
+    .listContainingInfoDiv {
+        font-size: 10px;
+        gap: 2%;
+    }
+
+    .containingData {
+        padding: 5px;
+    }
+
+    .middleSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutUserInfo {
+        flex-direction: column;
+    }
+
+    .totalUser, .totalBooking {
+        font-size: 12px;
+        padding: 8px;
+        width: 100%;
+    }
+
+    .hotelInfo, .aboutuser, .addHotel {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .buttonAboutUser, .buttonAboutHotel, .editbutton {
+        font-size: 10px;
+        padding: 2px;
+    }
+}

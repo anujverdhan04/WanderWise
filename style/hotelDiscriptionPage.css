@@ -1,0 +1,222 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    color: var(--main-text-color);
+    font-family: var(--font-used);
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --font-used: 'Times New Roman', Times, serif;
+    --main-text-color: rgb(6, 5, 5);
+    --main-bg: linear-gradient(55deg, rgba(47, 47, 47, 1) 0%, rgba(214, 214, 214, 1) 12%, rgba(227, 227, 227, 1) 46%, rgba(242, 242, 242, 1) 74%, rgba(245, 245, 245, 1) 83%);
+}
+
+body {
+    background: var(--main-bg);
+    /* width: 100%; */
+}
+
+header {
+    background-color: #d2d1d1;
+    width: 100%;
+
+}
+
+
+.top {
+    font-style: italic;
+    text-align: center;
+    max-width: 100%;
+
+
+}
+
+.title {
+    padding: 2px;
+    /* background-color: #457299; */
+}
+
+
+.nav {
+
+    /* Ihave to work on background  */
+    background: transparent;
+    /* display: flex; */
+    padding-top: 10px;
+    border-radius: 8px;
+    text-align: left;
+    
+
+}
+
+.nav2 {
+    display: flex;
+    background: transparent;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+.hotels,
+.restaurant,
+.flights,
+.things,
+.register {
+
+    display: inline-flex;
+    margin: 10px;
+
+}
+
+/* hover prop for button background */
+
+.nav2 h3:hover {
+    background-color: rgb(135, 135, 135);
+    font-size: 18px;
+}
+
+.discription{
+    border-left: 1px solid rgb(180, 181, 180);
+    border-right: 1px solid rgb(180, 181, 180);
+    border-bottom: 10px solid rgb(180, 181, 180);
+}
+
+.containingImgAndText{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px 10px;
+    background-color: rgb(232, 240, 240);
+
+}
+
+.image{
+   display: flex;
+   flex-direction: row;
+   /* overflow: scroll; */
+   overflow-x: scroll;
+   scroll-behavior: smooth;
+   width: 300px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(79, 77, 77);
+}
+
+
+.text{
+    display: flex;
+    flex-direction:column ;
+    font-size: 20px;
+    gap:25px;
+
+}
+  
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.buttons .bookingButton{
+    width: 100px;
+    padding:2% ;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(50, 134, 109);
+    /* color: white; */
+    border-radius: 10px;
+}
+.buttons .wishlistButton{
+    width: 100px;
+    padding:2% ;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb(184, 91, 91);
+    color: white;
+}
+
+
+
+.text .text1{
+    font-weight: bold;
+}
+
+.similarLocation{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    overflow: scroll;
+    gap: 3%;
+    margin: 4% 0;
+}
+
+.similarLocation .famous1 {
+    padding: 10px;
+    margin: 2% 0;
+}
+
+.similarLocation .famous1 .image{
+    height: 250px;
+    width: 250px;
+
+}
+
+
+
+@media (min-width:700px) and (max-width:1023px) {
+
+    .nav2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (min-device-width: 650px) and (max-device-width: 850px) {
+ 
+    .nav{
+       max-width: 100%;
+       display: flex;
+       text-align: center;
+ 
+    }
+   .nav2 {
+       width: 100%;
+       display: flex;
+       flex-direction: row;
+       justify-content: center; 
+       gap:20px
+     
+
+   }
+}
+
+
+@media (max-width:480px) {
+    body{
+        max-width: 425px;
+    }
+
+   
+    .top {
+        max-width: 100%;
+    }
+
+    .nav{
+        max-width: 100%;
+    }
+
+    .nav2{
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+        justify-content: space-evenly;
+        font-size: 10px;
+        gap:25px
+    }
+}
